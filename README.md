@@ -5,7 +5,11 @@ Just a simple graphic demo that demonstrates loading and manipulating image data
 
 This can be compiled with the command:
 ```
-gcc -lSDL2 main.c
+make
+```
+In addition, the Makefile also has a target to deploy to the web with emscripten. First make sure that emscripten is installed and configured on your computer, then run the following command to generate an html and data file that can be used to deploy the app on the web:
+```
+make fendemo-web
 ```
 
-It also has support for building with emscripten and has a live demo [here](https://fenteale.com/fendemo.html).
+A live demo of the emscripten version is available to view [here](https://fenteale.com/fendemo.html).
